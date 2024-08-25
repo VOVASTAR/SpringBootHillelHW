@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: SpringBootHillelHW
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hillel_spring_jpa_app
+    username: postgres
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
